@@ -38,7 +38,9 @@ namespace Lib
                 cmd.Parameters.AddWithValue("Fname", textBox1.Text);
                 cmd.Parameters.AddWithValue("Sname", textBox2.Text);
                 cmd.ExecuteNonQuery();
-
+                textBox1.Text = "";
+                textBox2.Text = "";
+                MessageBox.Show("Запись успешно добавлена!");
 
             }
         }
